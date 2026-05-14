@@ -3,923 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe to Autostraddle — The Print Magazine</title>
+    <meta name="description" content="The Autostraddle print magazine, delivered every quarter. $8.17/month, billed annually. Cancel anytime.">
+    <meta property="og:title" content="Subscribe to Autostraddle — The Print Magazine">
+    <meta property="og:description" content="Quarterly print, delivered. $8.17/month, billed annually.">
+    <meta property="og:image" content="https://zinemedia.forthem.com/issue-02-cover.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Anton&display=swap" rel="stylesheet">
+    <link rel="preload" as="image" href="/issue-02-cover.png" fetchpriority="high">
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
     j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
     })(window,document,'script','dataLayer','GTM-N3ZZQZ5');</script>
-    <!-- End Google Tag Manager -->
-    <title>Autostraddle Print Magazine - Free with Membership</title>
-    <meta name="description" content="Get Autostraddle's seasonal print magazine free with your membership. Join 4,400+ members.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;600;700;800&family=Space+Grotesk:wght@400;600;700;800&display=swap" rel="stylesheet">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-
-        body {
-            font-family: 'Roboto Mono', monospace;
-            line-height: 1.6;
-            color: #1a1a1a;
-            background: #fff;
-            -webkit-font-smoothing: antialiased;
-            overflow-x: hidden;
-        }
-
-        /* ── HEADER ── */
-        .header {
-            background: #0e1118;
-            padding: 12px 20px;
-            position: relative;
-            z-index: 10;
-        }
-        .header img { height: 14px; width: auto; display: block; filter: invert(1); }
-
-        /* ── HERO (dark, animated gradient) ── */
-        .hero-wrap {
-            position: relative;
-            overflow: hidden;
-        }
-        .hero-gradient {
-            position: absolute;
-            inset: 0;
-            background:
-                radial-gradient(ellipse 80% 60% at 20% 40%, rgba(186, 186, 0, 0.25) 0%, transparent 70%),
-                radial-gradient(ellipse 60% 80% at 80% 60%, rgba(222, 1, 0, 0.15) 0%, transparent 70%),
-                radial-gradient(ellipse 50% 50% at 50% 100%, rgba(9, 105, 228, 0.12) 0%, transparent 60%);
-            animation: gradientShift 8s ease-in-out infinite alternate;
-        }
-        @keyframes gradientShift {
-            0% { transform: scale(1) translate(0, 0); opacity: 1; }
-            50% { transform: scale(1.1) translate(-2%, 3%); opacity: 0.8; }
-            100% { transform: scale(1.05) translate(2%, -2%); opacity: 1; }
-        }
-        /* Dark textured background for branded sections */
-        .dark-bg {
-            background: #111 url('bg-texture.jpg') center / 512px 512px repeat;
-        }
-        .hero {
-            position: relative;
-            z-index: 1;
-            padding: 64px 20px 48px;
-            text-align: center;
-            max-width: 680px;
-            margin: 0 auto;
-            color: #fff;
-        }
-        .hero-eyebrow {
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.72rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.15em;
-            color: #BABA00;
-            margin-bottom: 16px;
-        }
-        .hero h1 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 800;
-            line-height: 1.08;
-            margin-bottom: 20px;
-            letter-spacing: -0.03em;
-        }
-        .hero h1 em {
-            font-style: normal;
-            color: #BABA00;
-        }
-        .hero .subtitle {
-            font-size: 0.92rem;
-            color: rgba(255,255,255,0.7);
-            margin-bottom: 32px;
-            line-height: 1.55;
-            max-width: 520px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .hero .subtitle strong { color: #fff; }
-        .btn-primary {
-            display: inline-block;
-            background: #BABA00;
-            color: #000;
-            padding: 16px 36px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.92rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.25s ease;
-            box-shadow: 0 0 30px rgba(186, 186, 0, 0.3), 0 4px 12px rgba(0,0,0,0.3);
-        }
-        .btn-primary:hover {
-            background: #d4d400;
-            transform: translateY(-2px);
-            box-shadow: 0 0 40px rgba(186, 186, 0, 0.45), 0 8px 24px rgba(0,0,0,0.3);
-        }
-        .hero .trust-line {
-            margin-top: 16px;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.45);
-        }
-
-        /* ── MAGAZINE IMAGES ── */
-        .magazine-grid {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 0;
-            padding: 0 0 48px;
-            position: relative;
-            z-index: 1;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        .magazine-frame {
-            transition: transform 0.4s ease;
-        }
-        .magazine-frame img {
-            width: 100%;
-            filter: drop-shadow(0 12px 32px rgba(0,0,0,0.4));
-        }
-        .magazine-frame {
-            cursor: pointer;
-        }
-        .mag-center {
-            flex: 0 0 55%;
-            z-index: 2;
-            transform: scale(1);
-        }
-        .mag-left, .mag-right {
-            flex: 0 0 22%;
-            opacity: 0.7;
-        }
-        .mag-left { transform: rotate(-3deg) translateX(60px) translateY(10px); }
-        .mag-right { transform: rotate(3deg) translateX(-60px) translateY(10px); }
-
-        /* Active states for clicked image */
-        .magazine-frame.active {
-            flex: 0 0 55%;
-            z-index: 2;
-            opacity: 1;
-            transform: rotate(0) translateX(0) translateY(0) scale(1);
-        }
-        .magazine-frame.inactive-left {
-            flex: 0 0 22%;
-            opacity: 0.7;
-            transform: rotate(-3deg) translateX(60px) translateY(10px);
-        }
-        .magazine-frame.inactive-right {
-            flex: 0 0 22%;
-            opacity: 0.7;
-            transform: rotate(3deg) translateX(-60px) translateY(10px);
-        }
-
-        /* ── SCROLLING TICKER ── */
-        .ticker {
-            background: #BABA00;
-            padding: 14px 0;
-            overflow: hidden;
-            white-space: nowrap;
-            position: relative;
-        }
-        .ticker-track {
-            display: inline-flex;
-            animation: ticker 20s linear infinite;
-        }
-        .ticker-item {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 0.82rem;
-            font-weight: 800;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-            color: #000;
-            padding: 0 32px;
-            flex-shrink: 0;
-        }
-        .ticker-item .dot {
-            display: inline-block;
-            width: 5px;
-            height: 5px;
-            background: #2a2622;
-            border-radius: 50%;
-            margin-right: 32px;
-            vertical-align: middle;
-        }
-        @keyframes ticker {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
-        }
-
-        /* ── SOCIAL PROOF ── */
-        .social-proof {
-            background: #f7f7f2;
-            padding: 48px 20px;
-        }
-        .social-proof-inner { max-width: 720px; margin: 0 auto; }
-        .social-proof h2 {
-            text-align: center;
-            font-size: 0.75rem;
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 0.1em;
-            color: #aaa;
-            margin-bottom: 24px;
-        }
-        .testimonials { display: flex; flex-direction: column; gap: 16px; }
-        .testimonial {
-            background: #fff;
-            border-radius: 12px;
-            padding: 24px;
-            border: 1px solid #e8e8e3;
-            position: relative;
-        }
-        .testimonial::before {
-            content: '\201C';
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 3rem;
-            line-height: 1;
-            color: #BABA00;
-            position: absolute;
-            top: 12px;
-            left: 16px;
-            opacity: 0.4;
-        }
-        .testimonial q {
-            font-size: 0.88rem;
-            line-height: 1.55;
-            color: #333;
-            font-style: normal;
-            display: block;
-            margin-bottom: 12px;
-            padding-left: 4px;
-        }
-        .testimonial q::before, .testimonial q::after { content: ''; }
-        .testimonial .author {
-            font-size: 0.75rem;
-            font-weight: 700;
-            color: #524A26;
-        }
-
-        /* ── BENEFITS ── */
-        .benefits {
-            padding: 56px 20px;
-            max-width: 760px;
-            margin: 0 auto;
-        }
-        .benefits h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-        }
-        .benefits .benefits-sub {
-            text-align: center;
-            font-size: 0.85rem;
-            color: #888;
-            margin-bottom: 36px;
-        }
-        .benefits-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-        }
-        .benefit-item {
-            padding: 24px 20px;
-            border-radius: 14px;
-            background: #f9f9f6;
-            border: 1px solid #eeeeea;
-            transition: transform 0.2s ease, box-shadow 0.2s ease;
-        }
-        .benefit-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 24px rgba(0,0,0,0.06);
-        }
-        .benefit-icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 1.2rem;
-            margin-bottom: 12px;
-        }
-        .benefit-icon.grass { background: rgba(186, 186, 0, 0.15); }
-        .benefit-icon.poppy { background: rgba(222, 1, 0, 0.1); }
-        .benefit-icon.hydra { background: rgba(9, 105, 228, 0.1); }
-        .benefit-icon.moss { background: rgba(82, 74, 38, 0.1); }
-        .benefit-item h3 {
-            font-size: 0.85rem;
-            font-weight: 700;
-            margin-bottom: 4px;
-        }
-        .benefit-item p {
-            font-size: 0.75rem;
-            color: #777;
-            line-height: 1.5;
-        }
-
-        /* ── PRICING ── */
-        .pricing {
-            padding: 56px 20px;
-            color: #fff;
-            position: relative;
-        }
-        .pricing::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            height: 1px;
-            background: linear-gradient(90deg, transparent, #BABA00, transparent);
-        }
-        .pricing-inner { max-width: 520px; margin: 0 auto; position: relative; z-index: 1; }
-        .pricing h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 8px;
-            letter-spacing: -0.02em;
-        }
-        .pricing .pricing-sub {
-            text-align: center;
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.5);
-            margin-bottom: 32px;
-        }
-        .price-card {
-            border-radius: 16px;
-            padding: 28px 24px;
-            margin-bottom: 14px;
-            position: relative;
-            transition: transform 0.2s ease;
-        }
-        .price-card:hover { transform: translateY(-2px); }
-        .price-card.featured {
-            background: #BABA00;
-            color: #000;
-            border: 2px solid #BABA00;
-        }
-        .price-card.featured .badge {
-            position: absolute;
-            top: -12px;
-            right: 20px;
-            background: #DE0100;
-            color: #fff;
-            font-size: 0.68rem;
-            font-weight: 800;
-            padding: 5px 14px;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.06em;
-            box-shadow: 0 4px 12px rgba(222, 1, 0, 0.3);
-        }
-        .price-card .plan-row {
-            display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 4px;
-        }
-        .price-card .plan-name {
-            font-size: 1.1rem;
-            font-weight: 800;
-        }
-        .price-card .plan-price { text-align: right; }
-        .price-card .plan-price .amount {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            line-height: 1;
-        }
-        .price-card .plan-price .original {
-            font-size: 0.82rem;
-            text-decoration: line-through;
-            opacity: 0.5;
-            margin-right: 6px;
-        }
-        .price-card .plan-price .period { font-size: 0.72rem; opacity: 0.6; }
-        .price-card .monthly-equiv { font-size: 0.78rem; margin-top: 2px; }
-        .price-card.featured .monthly-equiv { color: rgba(0,0,0,0.6); }
-        .price-card .savings-note {
-            display: inline-block;
-            margin-top: 12px;
-            font-size: 0.75rem;
-            font-weight: 700;
-            padding: 5px 12px;
-            border-radius: 8px;
-            background: rgba(0,0,0,0.08);
-        }
-        .sticker-bonus {
-            margin-top: 10px;
-            font-size: 0.78rem;
-            font-weight: 700;
-            color: #DE0100;
-            background: rgba(222, 1, 0, 0.08);
-            padding: 6px 12px;
-            border-radius: 8px;
-            display: inline-block;
-        }
-        .price-card.featured .sticker-bonus {
-            color: #000;
-            background: rgba(0,0,0,0.1);
-        }
-        .price-card .card-cta {
-            display: block;
-            width: 100%;
-            margin-top: 20px;
-            padding: 14px;
-            text-align: center;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.88rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.2s ease;
-            cursor: pointer;
-            border: none;
-        }
-        .price-card.featured .card-cta {
-            background: #2a2622;
-            color: #fff;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.25);
-        }
-        .price-card.featured .card-cta:hover {
-            background: #1a1a1a;
-            transform: translateY(-1px);
-        }
-        .price-card.secondary {
-            background: rgba(255,255,255,0.08);
-            border: 1px solid rgba(255,255,255,0.12);
-            color: #fff;
-        }
-        .price-card.secondary .monthly-equiv { color: rgba(255,255,255,0.4); }
-        .price-card.secondary .card-cta {
-            background: transparent;
-            color: #fff;
-            border: 2px solid rgba(255,255,255,0.3);
-        }
-        .price-card.secondary .card-cta:hover {
-            background: #fff;
-            color: #000;
-            border-color: #fff;
-        }
-        .pricing .cancel-note {
-            text-align: center;
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.35);
-            margin-top: 20px;
-        }
-        .pricing .zine-only {
-            text-align: center;
-            font-size: 0.75rem;
-            color: rgba(255,255,255,0.55);
-            margin-top: 12px;
-        }
-        .pricing .zine-only a {
-            color: #fff;
-            text-decoration: underline;
-            text-underline-offset: 2px;
-            transition: color 0.2s;
-        }
-        .pricing .zine-only a:hover {
-            color: #BABA00;
-        }
-
-        /* ── FAQ ── */
-        .faq {
-            padding: 56px 20px;
-            max-width: 640px;
-            margin: 0 auto;
-        }
-        .faq h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            text-align: center;
-            margin-bottom: 28px;
-        }
-        .faq-item { border-bottom: 1px solid #e5e5e0; }
-        .faq-item:first-child { border-top: 1px solid #e5e5e0; }
-        .faq-q {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 18px 0;
-            cursor: pointer;
-            font-size: 0.88rem;
-            font-weight: 600;
-            background: none;
-            border: none;
-            width: 100%;
-            text-align: left;
-            font-family: 'Roboto Mono', monospace;
-            color: #1a1a1a;
-            transition: color 0.2s;
-        }
-        .faq-q:hover { color: #524A26; }
-        .faq-q .arrow {
-            font-size: 1rem;
-            transition: transform 0.25s ease;
-            flex-shrink: 0;
-            margin-left: 12px;
-            color: #BABA00;
-        }
-        .faq-q[aria-expanded="true"] .arrow { transform: rotate(180deg); }
-        .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.3s ease; }
-        .faq-a-inner {
-            padding: 0 0 18px;
-            font-size: 0.82rem;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        /* ── CREATOR VIDEOS ── */
-        .creators {
-            padding: 56px 20px;
-            text-align: center;
-        }
-        .creators h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 800;
-            color: #fff;
-            margin-bottom: 8px;
-        }
-        .creators .creators-sub {
-            font-size: 0.82rem;
-            color: rgba(255,255,255,0.45);
-            margin-bottom: 36px;
-        }
-        .creators-grid {
-            display: flex;
-            gap: 20px;
-            max-width: 720px;
-            margin: 0 auto;
-            justify-content: center;
-        }
-        .creator-card {
-            flex: 1;
-            max-width: 340px;
-        }
-        .creator-video-wrap {
-            position: relative;
-            border-radius: 14px;
-            overflow: hidden;
-            aspect-ratio: 9 / 16;
-            background: #000;
-            box-shadow: 0 12px 40px rgba(0,0,0,0.4);
-        }
-        .creator-video-wrap video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        }
-        .unmute-btn {
-            position: absolute;
-            bottom: 12px;
-            right: 12px;
-            width: 36px;
-            height: 36px;
-            border-radius: 50%;
-            background: rgba(0,0,0,0.6);
-            border: none;
-            color: #fff;
-            font-size: 0.85rem;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            backdrop-filter: blur(4px);
-            -webkit-backdrop-filter: blur(4px);
-            transition: background 0.2s;
-        }
-        .unmute-btn:hover { background: rgba(0,0,0,0.8); }
-        .creator-name {
-            margin-top: 14px;
-            font-size: 0.82rem;
-            font-weight: 700;
-            color: #BABA00;
-        }
-        .creator-handle {
-            font-size: 0.72rem;
-            color: rgba(255,255,255,0.4);
-            margin-top: 2px;
-        }
-        @media (max-width: 640px) {
-            .creators-grid {
-                flex-direction: column;
-                align-items: center;
-            }
-            .creator-card {
-                max-width: 280px;
-                width: 100%;
-            }
-        }
-
-        /* ── FINAL CTA ── */
-        .final-cta {
-            color: #fff;
-            padding: 64px 20px;
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-        }
-        .final-cta::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: radial-gradient(ellipse 60% 80% at 50% 80%, rgba(186, 186, 0, 0.12) 0%, transparent 70%);
-            pointer-events: none;
-        }
-        .final-cta-inner { position: relative; z-index: 1; }
-        .final-cta h2 {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2rem;
-            font-weight: 800;
-            margin-bottom: 12px;
-            letter-spacing: -0.02em;
-        }
-        .final-cta h2 em { font-style: normal; color: #BABA00; }
-        .final-cta p {
-            font-size: 0.88rem;
-            color: rgba(255,255,255,0.65);
-            margin-bottom: 28px;
-            max-width: 440px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        .final-cta .btn-final {
-            display: inline-block;
-            background: #BABA00;
-            color: #000;
-            padding: 16px 36px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.95rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            transition: all 0.25s ease;
-            box-shadow: 0 0 30px rgba(186, 186, 0, 0.2);
-        }
-        .final-cta .btn-final:hover {
-            background: #d4d400;
-            transform: translateY(-2px);
-            box-shadow: 0 0 40px rgba(186, 186, 0, 0.35);
-        }
-        .final-cta .terms {
-            margin-top: 16px;
-            font-size: 0.7rem;
-            color: rgba(255,255,255,0.3);
-        }
-
-        /* ── STICKY MOBILE CTA ── */
-        .sticky-cta {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(186, 186, 0, 0.97);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            padding: 12px 20px;
-            box-shadow: 0 -4px 20px rgba(0,0,0,0.1);
-            z-index: 1000;
-            text-align: center;
-        }
-        .sticky-cta a {
-            display: block;
-            background: #000;
-            color: #fff;
-            padding: 14px;
-            font-family: 'Roboto Mono', monospace;
-            font-size: 0.88rem;
-            font-weight: 700;
-            text-decoration: none;
-            border-radius: 50px;
-            max-width: 400px;
-            margin: 0 auto;
-        }
-        .sticky-cta .sticky-sub {
-            font-size: 0.65rem;
-            color: rgba(0,0,0,0.5);
-            margin-top: 4px;
-        }
-
-        /* ── RESPONSIVE ── */
-        @media (max-width: 640px) {
-            .hero h1 { font-size: 2rem; }
-            .hero { padding: 36px 16px 24px; }
-            .magazine-grid { gap: 0; padding: 0; margin-left: -10px; margin-right: -10px; }
-            .mag-center, .magazine-frame.active { flex: 0 0 80%; }
-            .mag-left, .mag-right, .magazine-frame.inactive-left, .magazine-frame.inactive-right { flex: 0 0 18%; }
-            .sticky-cta { display: block !important; }
-            .price-card .plan-price .amount { font-size: 1.6rem; }
-            .ticker-item { font-size: 0.72rem; padding: 0 24px; }
-            /* Extra bottom padding on last section so sticky CTA doesn't cover */
-            .creators { padding-bottom: 100px; }
-        }
-        @media (min-width: 641px) {
-            .hero h1 { font-size: 3.2rem; }
-            .testimonials { flex-direction: row; }
-            .testimonial { flex: 1; }
-            .benefits-grid { grid-template-columns: 1fr 1fr 1fr; }
-        }
-    </style>
-
-</head>
-<body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3ZZQZ5"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-    <!-- Header -->
-    <header class="header">
-        <img src="FT x AS Black.png" alt="For Them x Autostraddle">
-    </header>
-
-    <!-- Hero -->
-    <section class="hero-wrap dark-bg">
-        <div class="hero-gradient"></div>
-        <section class="hero">
-            <p class="hero-eyebrow">Autostraddle Print Magazine</p>
-            <h1>Queer Stories,<br>Delivered to <em>Your Door</em></h1>
-            <p class="subtitle">Join <strong>4,400+ members</strong> getting our limited edition print magazine every season — plus 30% off everything and exclusive queer content.</p>
-            <a href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1574994086%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D46548050673830%26items%5B1%5D%5Bquantity%5D%3D1%26items%5B2%5D%5Bid%5D%3D46400215023782%26items%5B2%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout" class="btn-primary" data-cta="hero">Get My First Magazine</a>
-            <p class="trust-line">Cancel anytime &middot; Keep your magazine either way</p>
-        </section>
-    <!-- Magazine Images -->
-    <div class="magazine-grid">
-        <div class="magazine-frame mag-left">
-            <img src="magazine-hero.png" alt="Autostraddle Magazine Issue 01" loading="eager">
-        </div>
-        <div class="magazine-frame mag-center">
-            <img src="variant-center.png" alt="Autostraddle Magazine Issue 02 - Queer Fight Clubs" loading="eager">
-        </div>
-        <div class="magazine-frame mag-right">
-            <img src="variant-right.png" alt="Autostraddle Magazine" loading="eager">
-        </div>
-    </div>
-    </section>
-
-    <!-- Scrolling Ticker -->
-    <div class="ticker" aria-hidden="true">
-        <div class="ticker-track">
-            <span class="ticker-item"><span class="dot"></span>Free Print Magazine</span>
-            <span class="ticker-item"><span class="dot"></span>30% Off Everything</span>
-            <span class="ticker-item"><span class="dot"></span>Exclusive Content</span>
-            <span class="ticker-item"><span class="dot"></span>Ad-Free Reading</span>
-            <span class="ticker-item"><span class="dot"></span>Partner Perks</span>
-            <span class="ticker-item"><span class="dot"></span>Cancel Anytime</span>
-            <span class="ticker-item"><span class="dot"></span>Free Print Magazine</span>
-            <span class="ticker-item"><span class="dot"></span>30% Off Everything</span>
-            <span class="ticker-item"><span class="dot"></span>Exclusive Content</span>
-            <span class="ticker-item"><span class="dot"></span>Ad-Free Reading</span>
-            <span class="ticker-item"><span class="dot"></span>Partner Perks</span>
-            <span class="ticker-item"><span class="dot"></span>Cancel Anytime</span>
-        </div>
-    </div>
-
-    <!-- Social Proof -->
-    <section class="social-proof">
-        <div class="social-proof-inner">
-            <h2>What members are saying</h2>
-            <div class="testimonials">
-                <div class="testimonial">
-                    <q>Exactly what a lot of us need right now. Jam packed with all the spice and depth and fun I look for in queer media. It feels lovely to be reading something where we are at the center instead of off on the sidelines.</q>
-                    <span class="author">Candice I.</span>
-                </div>
-                <div class="testimonial">
-                    <q>Got a subscription for my wife's birthday, it's awesome to have a hard copy of queer media. Looking forward to the next one!</q>
-                    <span class="author">Lainey W.</span>
-                </div>
-                <div class="testimonial">
-                    <q>Gorgeous piece of work! Total art. I'm so impressed with the quality and the creativity. We love you for putting this out and as fellow artists we say Bravo.</q>
-                    <span class="author">Lorena</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Pricing -->
-    <section class="pricing dark-bg" id="pricing">
-        <div class="pricing-inner">
-            <h2>Choose Your Plan</h2>
-            <p class="pricing-sub">Both include your free seasonal print magazine</p>
-
-            <div class="price-card featured">
-                <div class="badge">Best Value</div>
-                <div class="plan-row">
-                    <div class="plan-name">Annual</div>
-                    <div class="plan-price">
-                        <span class="original">$127</span>
-                        <span class="amount">$98</span>
-                        <div class="period">per year</div>
-                    </div>
-                </div>
-                <div class="monthly-equiv">That's just $8.17/month</div>
-                <span class="savings-note">Save $14/yr vs quarterly</span>
-                <div class="sticker-bonus">+ FREE Very Gay Sticker Pack ($15 value)</div>
-                <a href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1574994086%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D46548050673830%26items%5B1%5D%5Bquantity%5D%3D1%26items%5B2%5D%5Bid%5D%3D46400215023782%26items%5B2%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout" class="card-cta" data-cta="pricing-annual">Get My First Magazine</a>
-            </div>
-
-            <div class="price-card secondary">
-                <div class="plan-row">
-                    <div class="plan-name">Quarterly</div>
-                    <div class="plan-price">
-                        <span class="amount">$28</span>
-                        <div class="period">every 3 months</div>
-                    </div>
-                </div>
-                <div class="monthly-equiv">$9.33/month</div>
-                <a href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1580236966%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D46548050673830%26items%5B1%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout" class="card-cta" data-cta="pricing-quarterly">Start Quarterly</a>
-            </div>
-
-            <p class="cancel-note">Cancel anytime &middot; No commitments &middot; Keep your magazine</p>
-            <p class="zine-only">Just want the magazine?<br><a href="https://forthem.com/products/autostraddle-magazine" data-cta="zine-only">Buy a single issue ($30)</a></p>
-        </div>
-    </section>
-
-    <!-- FAQ -->
-    <section class="faq">
-        <h2>Questions? We've Got You.</h2>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                What do I get with my membership?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Your membership includes Autostraddle's seasonal print magazine shipped to your door, 30% off all products, exclusive queer journalism, ad-free reading, member newsletters, and discounts from vetted partner brands like Kirrin Finch, Miss Grass, and Folx Health.</div></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                How often does the magazine ship?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">The magazine ships seasonally &mdash; on average 4 times per year. Each issue is a limited edition with new themes, essays, photojournalism, crosswords, and more. You'll receive it automatically as part of your membership.</div></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                Can I really cancel anytime?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Yes, 100%. Cancel with one click, no questions asked. You keep any magazines already shipped to you, and your membership benefits stay active through the end of your billing period.</div></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                What if I don't love the magazine?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">We offer a satisfaction guarantee on your first magazine. If you don't love it, we'll make it right &mdash; and you keep the magazine either way. We're that confident you'll love it.</div></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                What's the difference between annual and quarterly?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">You get exactly the same benefits either way. Annual saves you $14/year ($98 vs $112 if paid quarterly), includes a free sticker pack, and locks in your rate. Quarterly gives you more flexibility at $28 every 3 months. Both include the free print magazine.</div></div>
-        </div>
-        <div class="faq-item">
-            <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">
-                Do you ship internationally?
-                <span class="arrow">&#9662;</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Yes! We ship internationally. Shipping is included with your membership.</div></div>
-        </div>
-    </section>
-
-    <!-- Creator Videos -->
-    <section class="creators dark-bg">
-        <h2>Your Fav Queer Creators Love It</h2>
-        <div class="creators-grid">
-            <div class="creator-card">
-                <div class="creator-video-wrap">
-                    <video src="stud-aunties-sm.mp4" autoplay muted loop playsinline loading="lazy" id="vid1"></video>
-                    <button class="unmute-btn" onclick="toggleMute('vid1', this)" aria-label="Unmute">&#128263;</button>
-                </div>
-                <div class="creator-name">Stud Aunties</div>
-                <div class="creator-handle">@timalikesmusic @igobymal</div>
-            </div>
-            <div class="creator-card">
-                <div class="creator-video-wrap">
-                    <video src="bridget-sm.mp4" autoplay muted loop playsinline loading="lazy" id="vid2"></video>
-                    <button class="unmute-btn" onclick="toggleMute('vid2', this)" aria-label="Unmute">&#128263;</button>
-                </div>
-                <div class="creator-name">Bridget Matloff</div>
-                <div class="creator-handle">@bridgetmatloff</div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- Sticky Mobile CTA -->
-    <div class="sticky-cta" id="stickyCta">
-        <a href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1574994086%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D46548050673830%26items%5B1%5D%5Bquantity%5D%3D1%26items%5B2%5D%5Bid%5D%3D46400215023782%26items%5B2%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout" data-cta="sticky">Get My First Magazine &mdash; $8.17/mo</a>
-        <div class="sticky-sub">Cancel anytime &middot; Free magazine included</div>
-    </div>
 
     <!-- GA4 -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ZNG8312HSQ"></script>
@@ -930,116 +29,281 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         gtag('config', 'G-ZNG8312HSQ');
     </script>
 
+    <!-- Meta Pixel -->
+    <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1316224412230662');
+        fbq('track', 'PageView');
+    </script>
+
+    <!-- Klaviyo -->
+    <script async type="text/javascript" src="https://static.klaviyo.com/onsite/js/klaviyo.js?company_id=XNpm6E"></script>
+    <script>window._learnq = window._learnq || [];</script>
+
     <!-- PostHog -->
     <script>
-        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);var n=t;if("undefined"!=typeof e)n=t[e]=function(){n.q.push(arguments)};else for(var p=["capture","register","register_once","unregister","identify","alias","track","ready","set_config","get_config","get_property","get_session_id","get_distinct_id","save_personas","set_personas","get_personas","get_session_replay_url","reset","group","onFeatureFlags","reloadFeatureFlags","get_flags","is_feature_enabled","override_digital_token"],r=0;r<p.length;r++)g(n,p[r]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
-        posthog.init('phc_aZFN69FhB54tFgJg4oAgPm9NNUkJlKvkA5JK652yNwk', {
-            api_host: 'https://us.i.posthog.com',
-            person_profiles: 'identified_only'
-        });
+        !function(t,e){var o,n,p,r;e.__SV||(window.posthog=e,e._i=[],e.init=function(i,s,a){function g(t,e){var o=e.split(".");2==o.length&&(t=t[o[0]],e=o[1]);t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}}(p=t.createElement("script")).type="text/javascript",p.crossOrigin="anonymous",p.async=!0,p.src=s.api_host.replace(".i.posthog.com","-assets.i.posthog.com")+"/static/array.js",(r=t.getElementsByTagName("script")[0]).parentNode.insertBefore(p,r);var u=e;for(void 0!==a?u=e[a]=[]:a="posthog",u.people=u.people||[],u.toString=function(t){var e="posthog";return"posthog"!==a&&(e+="."+a),t||(e+=" (stub)"),e},u.people.toString=function(){return u.toString(1)+".people (stub)"},o="init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "),n=0;n<o.length;n++)g(u,o[n]);e._i.push([i,s,a])},e.__SV=1)}(document,window.posthog||[]);
+        posthog.init('phc_aZFN69FhB54tFgJg4oAgPm9NNUkJlKvkA5JK652yNwk', { api_host: 'https://us.i.posthog.com', person_profiles: 'identified_only' });
     </script>
 
-    <script>
-        // Magazine image focus — click on desktop, swipe on mobile
-        const magGrid = document.querySelector('.magazine-grid');
-        const magFrames = document.querySelectorAll('.magazine-frame');
-        let currentMag = 1; // start on center (index 1)
+    <style>
+        :root {
+            --bg: #f5f1e6;
+            --ink: #0a0029;
+            --grass: #c8d44a;
+            --pink: #ff5b8a;
+            --muted: #6b6478;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        html, body { background: var(--bg); color: var(--ink); font-family: 'Roboto Mono', monospace; -webkit-font-smoothing: antialiased; }
+        body { min-height: 100vh; display: flex; flex-direction: column; }
 
-        function setActiveMag(index) {
-            if (index < 0 || index >= magFrames.length || index === currentMag) return;
-            currentMag = index;
-            const frames = Array.from(magFrames);
-            frames.forEach(f => {
-                f.classList.remove('active', 'inactive-left', 'inactive-right', 'mag-center', 'mag-left', 'mag-right');
-            });
-            frames[index].classList.add('active');
-            frames.forEach((f, i) => {
-                if (i === index) return;
-                f.classList.add(i < index ? 'inactive-left' : 'inactive-right');
-            });
+        .page { flex: 1; }
+
+        .hero { display: grid; place-items: center; padding: 3rem 1.25rem 4rem; }
+        .hero-inner { max-width: 1080px; width: 100%; display: grid; gap: 2.5rem; }
+        @media (min-width: 880px) {
+            .hero { padding: 5rem 2rem 6rem; }
+            .hero-inner { grid-template-columns: 1.1fr 1fr; align-items: center; gap: 4rem; }
         }
 
-        // Click handler (works on both desktop and mobile)
-        magFrames.forEach((frame, i) => {
-            frame.addEventListener('click', () => setActiveMag(i));
-        });
+        .cover-wrap { display: grid; place-items: center; }
+        .cover { width: 100%; max-width: 360px; height: auto; filter: drop-shadow(0 24px 30px rgba(10,0,41,0.18)); }
+        @media (min-width: 880px) { .cover { max-width: 420px; } }
 
-        // Swipe handler (mobile)
-        let touchStartX = 0;
-        let touchEndX = 0;
-        if (magGrid) {
-            magGrid.addEventListener('touchstart', e => {
-                touchStartX = e.changedTouches[0].screenX;
-            }, { passive: true });
-            magGrid.addEventListener('touchend', e => {
-                touchEndX = e.changedTouches[0].screenX;
-                const diff = touchStartX - touchEndX;
-                if (Math.abs(diff) > 40) {
-                    if (diff > 0) {
-                        // Swipe left — next image
-                        setActiveMag(Math.min(currentMag + 1, magFrames.length - 1));
-                    } else {
-                        // Swipe right — previous image
-                        setActiveMag(Math.max(currentMag - 1, 0));
-                    }
-                }
-            }, { passive: true });
-        }
+        .pitch .kicker { font-size: 0.78rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--pink); margin-bottom: 0.9rem; }
+        .pitch h1 { font-family: 'Anton', sans-serif; font-size: clamp(2.6rem, 7vw, 4.5rem); line-height: 0.95; letter-spacing: -0.01em; text-transform: uppercase; margin-bottom: 1.1rem; }
+        .pitch h1 em { font-style: normal; color: var(--pink); }
+        .pitch .lede { font-size: clamp(1rem, 1.6vw, 1.15rem); line-height: 1.5; color: var(--muted); margin-bottom: 2rem; max-width: 36ch; }
 
-        // Video mute toggle
-        function toggleMute(videoId, btn) {
-            const video = document.getElementById(videoId);
-            if (!video) return;
-            // Mute all other videos first
-            document.querySelectorAll('.creator-video-wrap video').forEach(v => {
-                if (v.id !== videoId) { v.muted = true; }
-            });
-            document.querySelectorAll('.unmute-btn').forEach(b => {
-                if (b !== btn) b.innerHTML = '&#128263;';
-            });
-            video.muted = !video.muted;
-            btn.innerHTML = video.muted ? '&#128263;' : '&#128266;';
-        }
+        .price-row { display: flex; align-items: baseline; gap: 0.6rem; margin-bottom: 0.4rem; }
+        .price { font-family: 'Anton', sans-serif; font-size: clamp(3rem, 7vw, 4.2rem); line-height: 1; }
+        .per { font-size: 1rem; color: var(--muted); }
+        .billed { font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); margin-bottom: 1.8rem; }
 
-        // FAQ accordion
-        function toggleFaq(btn) {
-            const expanded = btn.getAttribute('aria-expanded') === 'true';
-            document.querySelectorAll('.faq-q').forEach(q => {
-                q.setAttribute('aria-expanded', 'false');
-                q.nextElementSibling.style.maxHeight = null;
-            });
-            if (!expanded) {
-                btn.setAttribute('aria-expanded', 'true');
-                const answer = btn.nextElementSibling;
-                answer.style.maxHeight = answer.scrollHeight + 'px';
+        .cta { display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; background: var(--ink); color: var(--bg); border: none; padding: 1.1rem 2rem; border-radius: 999px; font-family: 'Roboto Mono', monospace; font-weight: 700; font-size: 1rem; letter-spacing: 0.04em; text-transform: uppercase; text-decoration: none; cursor: pointer; transition: transform 0.12s ease, background 0.2s ease; min-width: 280px; }
+        .cta:hover { background: var(--pink); transform: translateY(-1px); }
+        .cta-arrow { font-size: 1.2rem; line-height: 1; }
+
+        .trust { margin-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.4rem; font-size: 0.78rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+        .trust span::before { content: "✓ "; color: var(--grass); font-weight: 700; }
+
+        .why { background: var(--ink); color: var(--bg); padding: 3rem 1.25rem; }
+        .why-inner { max-width: 1080px; margin: 0 auto; display: grid; gap: 1.5rem; }
+        @media (min-width: 880px) { .why-inner { grid-template-columns: repeat(3, 1fr); gap: 3rem; } .why { padding: 4rem 2rem; } }
+        .why-item { text-align: center; }
+        .why-num { font-family: 'Anton', sans-serif; font-size: 3rem; color: var(--grass); line-height: 1; margin-bottom: 0.4rem; }
+        .why-label { font-size: 0.95rem; line-height: 1.4; color: rgba(245,241,230,0.85); }
+
+        .reviews { padding: 4rem 1.25rem 3rem; }
+        .reviews-inner { max-width: 980px; margin: 0 auto; }
+        .reviews h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); text-align: center; text-transform: uppercase; margin-bottom: 2rem; }
+        .review-grid { display: grid; gap: 1rem; }
+        @media (min-width: 760px) { .review-grid { grid-template-columns: repeat(3, 1fr); } }
+        .review { background: white; padding: 1.5rem; border: 2px solid var(--ink); }
+        .review p { font-size: 0.95rem; line-height: 1.5; font-style: italic; margin-bottom: 0.9rem; }
+        .review .name { font-size: 0.72rem; letter-spacing: 0.16em; text-transform: uppercase; color: var(--pink); font-weight: 700; }
+
+        .faq { padding: 3rem 1.25rem 5rem; }
+        .faq-inner { max-width: 720px; margin: 0 auto; }
+        .faq h2 { font-family: 'Anton', sans-serif; font-size: clamp(1.8rem, 4vw, 2.6rem); text-align: center; text-transform: uppercase; margin-bottom: 2rem; }
+        details { border-bottom: 1px solid rgba(10,0,41,0.15); padding: 1.1rem 0; }
+        details summary { font-weight: 700; cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: center; font-size: 1rem; }
+        details summary::-webkit-details-marker { display: none; }
+        details summary::after { content: "+"; font-family: 'Anton', sans-serif; font-size: 1.6rem; line-height: 0.5; transition: transform 0.2s ease; }
+        details[open] summary::after { transform: rotate(45deg); }
+        details p { margin-top: 0.8rem; color: var(--muted); line-height: 1.55; font-size: 0.95rem; }
+        details a { color: var(--ink); font-weight: 700; }
+
+        .sticky-cta { position: fixed; bottom: 0; left: 0; right: 0; background: var(--ink); color: var(--bg); padding: 0.9rem 1rem; display: flex; align-items: center; justify-content: space-between; gap: 0.8rem; z-index: 50; box-shadow: 0 -8px 24px rgba(10,0,41,0.15); }
+        .sticky-price { font-family: 'Anton', sans-serif; font-size: 1.3rem; }
+        .sticky-sub { font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; opacity: 0.7; }
+        .sticky-btn { background: var(--grass); color: var(--ink); padding: 0.7rem 1.2rem; border-radius: 999px; font-weight: 700; text-decoration: none; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; white-space: nowrap; }
+        @media (min-width: 880px) { .sticky-cta { display: none; } }
+
+        footer { background: var(--ink); color: rgba(245,241,230,0.7); padding: 1.5rem 1.25rem 5rem; text-align: center; font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; }
+        @media (min-width: 880px) { footer { padding: 2rem 2rem 2rem; } }
+    </style>
+</head>
+<body>
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N3ZZQZ5" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="page">
+
+    <section class="hero">
+        <div class="hero-inner">
+            <div class="cover-wrap">
+                <img class="cover" src="/issue-02-cover.png" alt="Autostraddle Print Issue #02 — King of Hearts" fetchpriority="high">
+            </div>
+
+            <div class="pitch">
+                <p class="kicker">Autostraddle Print Magazine</p>
+                <h1>A magazine <em>made for us.</em></h1>
+                <p class="lede">A new print issue of Autostraddle delivered to your door every quarter. Independent queer journalism, photography, essays, and crosswords — in your hands.</p>
+
+                <div class="price-row">
+                    <span class="price">$8.17</span>
+                    <span class="per">/month</span>
+                </div>
+                <p class="billed">$98 billed annually · 4 issues a year</p>
+
+                <a class="cta" href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1574994086%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D56214999859366%26items%5B1%5D%5Bquantity%5D%3D1%26items%5B2%5D%5Bid%5D%3D46400215023782%26items%5B2%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout%3Futm_source%3Dzinemedia%26utm_medium%3Dlanding_page%26utm_campaign%3Dmagazine_subscription" data-cta="hero">
+                    Subscribe <span class="cta-arrow">→</span>
+                </a>
+
+                <div class="trust">
+                    <span>Free US shipping</span>
+                    <span>Cancel anytime</span>
+                    <span>Loved by 4,400+ readers</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="why">
+        <div class="why-inner">
+            <div class="why-item">
+                <div class="why-num">4</div>
+                <p class="why-label">Limited edition print<br>issues per year</p>
+            </div>
+            <div class="why-item">
+                <div class="why-num">200+</div>
+                <p class="why-label">Pages of original queer<br>journalism, photography &amp; art</p>
+            </div>
+            <div class="why-item">
+                <div class="why-num">100%</div>
+                <p class="why-label">Independent &amp; queer-owned.<br>No advertisers, no algorithms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="reviews-inner">
+            <h2>What subscribers are saying</h2>
+            <div class="review-grid">
+                <div class="review">
+                    <p>"Finally, physical print media FOR US made by real artists, writers and journalists."</p>
+                    <span class="name">Jordan</span>
+                </div>
+                <div class="review">
+                    <p>"Jam packed with the spice and depth I look for in queer media. It feels lovely to be reading something where we are at the center."</p>
+                    <span class="name">Candice I.</span>
+                </div>
+                <div class="review">
+                    <p>"Gorgeous piece of work. Total art. Impressed with the quality and creativity. Bravo."</p>
+                    <span class="name">Lorena</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq">
+        <div class="faq-inner">
+            <h2>Questions</h2>
+
+            <details>
+                <summary>What exactly am I getting?</summary>
+                <p>One limited-edition print issue of Autostraddle every quarter (four per year), delivered free to your door. Each issue is 200+ pages of essays, photography, reporting, fiction, comics, and queer-themed puzzles.</p>
+            </details>
+
+            <details>
+                <summary>Can I cancel?</summary>
+                <p>Anytime, in two clicks from your account. No questions, no hidden fees, no auto-renewal traps.</p>
+            </details>
+
+            <details>
+                <summary>What if I don't love my first issue?</summary>
+                <p>Email us and we'll refund you. Keep the magazine either way.</p>
+            </details>
+
+            <details>
+                <summary>Do you ship internationally?</summary>
+                <p>Yes — international shipping is available at checkout for an additional fee. Free shipping applies to US orders.</p>
+            </details>
+
+            <details>
+                <summary>Who's behind it?</summary>
+                <p>Autostraddle is one of the longest-running independent queer media outlets, published by For Them — both led by queer, trans, and lesbian editors, writers, and photographers.</p>
+            </details>
+        </div>
+    </section>
+
+</div>
+
+<div class="sticky-cta">
+    <div>
+        <div class="sticky-price">$8.17/mo</div>
+        <div class="sticky-sub">$98 / year</div>
+    </div>
+    <a class="sticky-btn" href="https://forthem.com/cart/clear?return_to=%2Fcart%2Fadd%3Fitems%5B0%5D%5Bid%5D%3D44792925257894%26items%5B0%5D%5Bselling_plan%5D%3D1574994086%26items%5B0%5D%5Bquantity%5D%3D1%26items%5B1%5D%5Bid%5D%3D56214999859366%26items%5B1%5D%5Bquantity%5D%3D1%26items%5B2%5D%5Bid%5D%3D46400215023782%26items%5B2%5D%5Bquantity%5D%3D1%26return_to%3D%2Fcheckout%3Futm_source%3Dzinemedia%26utm_medium%3Dlanding_page%26utm_campaign%3Dmagazine_subscription" data-cta="sticky">Subscribe →</a>
+</div>
+
+<footer>
+    Autostraddle Print · A For Them publication · Brooklyn, NY
+</footer>
+
+<script>
+    document.querySelectorAll('[data-cta]').forEach(el => {
+        el.addEventListener('click', function () {
+            const loc = this.getAttribute('data-cta');
+            const isQuarterly = (this.href || '').includes('1580236966');
+            const plan = isQuarterly ? 'quarterly' : 'annual';
+            const value = isQuarterly ? 28 : 98;
+
+            if (typeof posthog !== 'undefined') {
+                posthog.capture('zinemedia_cta_clicked', { position: loc, plan: plan, page: 'zinemedia_magazine', value: value });
             }
-        }
-
-
-        // Track CTA clicks
-        document.querySelectorAll('[data-cta]').forEach(el => {
-            el.addEventListener('click', function() {
-                const loc = this.getAttribute('data-cta');
-                const isAnnual = this.href && this.href.includes('1574994086');
-                const plan = isAnnual ? 'annual' : 'quarterly';
-                if (typeof posthog !== 'undefined') {
-                    posthog.capture('zinemedia_cta_clicked', { position: loc, plan: plan, page: 'zinemedia' });
-                }
-                if (typeof gtag !== 'undefined') {
-                    gtag('event', 'printmembership_signup_intent', {
-                        currency: 'USD', value: isAnnual ? 98 : 28,
-                        plan_type: 'all-access', billing_cycle: plan,
-                        button_location: loc, source_page: 'zinemedia_landing'
-                    });
-                }
-            });
+            if (typeof gtag !== 'undefined') {
+                gtag('event', 'zinemedia_signup_intent', {
+                    currency: 'USD', value: value,
+                    plan_type: 'magazine-subscription',
+                    billing_cycle: plan,
+                    button_location: loc,
+                    source_page: 'zinemedia_magazine_subscription'
+                });
+            }
+            if (typeof fbq !== 'undefined') {
+                const contentIds = isQuarterly
+                    ? ['44792925257894', '56214999859366']
+                    : ['44792925257894', '56214999859366', '46400215023782'];
+                fbq('track', 'AddToCart', {
+                    content_ids: contentIds,
+                    content_type: 'product',
+                    content_category: 'zinemedia_magazine_subscription',
+                    value: value, currency: 'USD'
+                });
+                fbq('track', 'InitiateCheckout', {
+                    value: value, currency: 'USD',
+                    num_items: isQuarterly ? 2 : 3,
+                    content_category: 'zinemedia_' + plan
+                });
+                fbq('trackCustom', 'ZineMediaSignupIntent', { plan: plan, value: value, currency: 'USD', button_location: loc });
+            }
+            if (typeof _learnq !== 'undefined') {
+                _learnq.push(['track', 'Started Checkout', {
+                    $event_id: 'zinemedia_' + loc + '_' + Date.now(),
+                    $value: value,
+                    ItemNames: isQuarterly
+                        ? ['AF+ All-Access Quarterly', 'Autostraddle Print Issue #02']
+                        : ['AF+ All-Access Annual', 'Autostraddle Print Issue #02', 'Very Gay Sticker Pack'],
+                    Categories: ['Magazine Subscription'],
+                    CheckoutURL: this.href,
+                    source: 'zinemedia_magazine_subscription',
+                    plan: plan,
+                    button_location: loc
+                }]);
+                _learnq.push(['track', 'ZineMedia Signup Intent', {
+                    plan: plan, value: value, button_location: loc, source: 'zinemedia_magazine_subscription'
+                }]);
+            }
         });
+    });
 
-        // Page view
-        if (typeof posthog !== 'undefined') {
-            posthog.capture('zinemedia_page_viewed', { page: 'zinemedia-landing', referrer: document.referrer || 'direct' });
-        }
-    </script>
+    if (typeof posthog !== 'undefined') {
+        posthog.capture('zinemedia_page_viewed', { page: 'zinemedia_magazine_subscription', referrer: document.referrer || 'direct' });
+    }
+</script>
 
 </body>
 </html>
